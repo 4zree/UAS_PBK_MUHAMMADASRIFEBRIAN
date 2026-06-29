@@ -27,7 +27,7 @@ export const useMenuStore = defineStore('menu', {
       this.loading = true
       this.error = null
       try {
-        const res = await axios.get('http://localhost:3000/menu')
+        const res = await axios.get('https://my-json-server.typicode.com/4zree/UAS_PBK_MUHAMMADASRIFEBRIAN/menu')
         this.daftarMenu = res.data
       } catch (err) {
         this.error = 'Gagal memuat data menu.'
