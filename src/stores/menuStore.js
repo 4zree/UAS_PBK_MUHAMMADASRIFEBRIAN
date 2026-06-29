@@ -27,7 +27,7 @@ export const useMenuStore = defineStore('menu', {
       this.loading = true
       this.error = null
       try {
-        const res = await axios.get('hhttps://6a42b5b57602860e6521d1bf.mockapi.io/menu')
+        const res = await axios.get('https://6a42b5b57602860e6521d1bf.mockapi.io/menu')
         this.daftarMenu = res.data
       } catch (err) {
         this.error = 'Gagal memuat data menu.'
