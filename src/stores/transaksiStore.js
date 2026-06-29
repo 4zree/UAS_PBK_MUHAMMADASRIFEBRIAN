@@ -32,7 +32,7 @@ export const useTransaksiStore = defineStore('transaksi', {
 
     async fetchTransaksi() {
       try {
-        const res = await axios.get('http://localhost:3000/transaksi')
+        const res = await axios.get('https://my-json-server.typicode.com/4zree/UAS_PBK_MUHAMMADASRIFEBRIAN/transaksi')
         this.transaksiList = res.data
       } catch (err) {
         console.error('❌ Gagal fetch transaksi:', err)
